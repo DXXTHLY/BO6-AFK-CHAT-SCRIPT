@@ -36,56 +36,68 @@ Run the script with Python:
 python dscdotggslash143x.py
 ```
 
-⌨️ Controls
+## ⌨️ Controls
+
 The script features a couple of simple controls for pausing and stopping the automation:
 
-Key	Action
-Right Shift	Pause / Resume
-Escape	Kill Switch (Exit)
+| Key           | Action              |
+|---------------|---------------------|
+| `Right Shift` | Pause / Resume      |
+| `Escape`      | Kill Switch (Exit)  |
 
-Pause/Resume: Press Right Shift to toggle between pausing and resuming the script.
+- **Pause/Resume**: Press `Right Shift` to toggle between pausing and resuming the script.
+- **Kill Switch**: Press `Escape` to immediately stop the script.
 
-Kill Switch: Press Escape to immediately stop the script.
+---
 
- Features
- Simulated Actions:
+## ✅ Features
+
+### Simulated Actions:
 The script will simulate human-like activity in-game, including:
 
-Random keyboard inputs: Keys like W, A, S, D, Q, E, Space, and Ctrl are randomly pressed for various durations to simulate movement.
-Mouse movements: The mouse moves in circular or zigzag patterns to avoid idle detection.
-Mouse clicks: Left and right mouse buttons are clicked randomly.
-Random chat messages: The script sends chat messages at random intervals, such as:
+- **Random keyboard inputs**: Keys like `W`, `A`, `S`, `D`, `Q`, `E`, `Space`, and `Ctrl` are randomly pressed for various durations to simulate movement.
+- **Mouse movements**: The mouse moves in circular or zigzag patterns to avoid idle detection.
+- **Mouse clicks**: Left and right mouse buttons are clicked randomly.
+- **Random chat messages**: The script sends chat messages at random intervals, such as:
+  - "My goldfish is playing for me rn 🐠"
+  - "Keyboard on fire 🔥"
+  - "Beep boop I'm a bot"
+  - "I’m here but spiritually gone"
+  - "Haven’t blinked in 2 hours 👁️👁️"
+  - "Running on 3 FPS and dreams"
+  - "My cat is farming XP"
+  - "This is totally not a bot"
 
-"My goldfish is playing for me rn 🐠"
-"Keyboard on fire 🔥"
-"Beep boop I'm a bot"
-"I’m here but spiritually gone"
-"Haven’t blinked in 2 hours 👁️👁️"
-"Running on 3 FPS and dreams"
-"My cat is farming XP"
-"This is totally not a bot"
+---
 
- How It Works
-Key Components:
-Mouse Movement: The script uses pyautogui to simulate smooth mouse movements. The mouse follows a circular path, moving to random points on the screen at a set interval to prevent the game from detecting inactivity.
-Keyboard Inputs: The script simulates key presses for game controls (like movement, crouch, jump, etc.) using pydirectinput. The key actions are randomized to look natural.
-Chat Messages: The script sends random messages to simulate in-game communication. This helps further reduce the likelihood of being detected as AFK.
-Pausing and Stopping: You can pause and resume the script with Right Shift and stop it entirely with the Escape key.
+##  How It Works
 
-Flow:
-Initialization: The script waits for you to start it and enters a loop where it simulates actions.
-AFK Simulation: The script continuously sends random key presses, mouse movements, and chat messages.
-Pause/Resume: You can pause the automation by pressing Right Shift, and resume it by pressing the same key again.
-Kill Switch: Press Escape to immediately exit the script.
+### Key Components:
+- **Mouse Movement**: The script uses `pyautogui` to simulate smooth mouse movements. The mouse follows a circular path, moving to random points on the screen at a set interval to prevent the game from detecting inactivity.
+- **Keyboard Inputs**: The script simulates key presses for game controls (like movement, crouch, jump, etc.) using `pydirectinput`. The key actions are randomized to look natural.
+- **Chat Messages**: The script sends random messages to simulate in-game communication. This helps further reduce the likelihood of being detected as AFK.
+- **Pausing and Stopping**: You can pause and resume the script with `Right Shift` and stop it entirely with the `Escape` key.
 
- Customization
+---
+
+### Flow:
+1. **Initialization**: The script waits for you to start it and enters a loop where it simulates actions.
+2. **AFK Simulation**: The script continuously sends random key presses, mouse movements, and chat messages.
+3. **Pause/Resume**: You can pause the automation by pressing `Right Shift`, and resume it by pressing the same key again.
+4. **Kill Switch**: Press `Escape` to immediately exit the script.
+
+---
+
+##  Customization
+
 Feel free to modify the script to suit your needs. You can:
 
-Customize chat messages: Add or remove phrases in the messages[] list to change the chat output.
+- **Customize chat messages**: Add or remove phrases in the `messages[]` list to change the chat output.
+- **Adjust timing**: Modify the durations of key presses, mouse movements, and message sending intervals to make the script more or less aggressive.
+- **Add more keys or actions**: Modify the key actions in the `perform_sequence()` function to suit the game controls of your choice.
 
-Adjust timing: Modify the durations of key presses, mouse movements, and message sending intervals to make the script more or less aggressive.
+---
 
-Add more keys or actions: Modify the key actions in the perform_sequence() function to suit the game controls of your choice.
+## 🛑 Safety Warning
 
-🛑 Safety Warning
 This script is meant for educational purposes and entertainment. Use it responsibly, and ensure that it doesn’t violate the terms of service of the game you are using it with. Running automated scripts in some online games may lead to account bans or other penalties. Always double-check with the game’s policy before using such scripts.
